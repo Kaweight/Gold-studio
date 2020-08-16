@@ -77,3 +77,64 @@ ul:first-child li {
         }
     }
 }
+
+.services {
+    .services-title {
+        text-align: center;
+    }
+
+    .services-graf {
+        text-align: center;
+    }
+
+    .services-box {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .col {
+            position: relative;
+            flex: 0 0 33.333%;
+            text-align: center;
+            margin: 25px 25px;
+
+            .fas {
+                display: relative;
+                font-size: 30px;
+                height: 50px;
+                width: 50px;
+                border: 2px solid gold;
+                border-radius: 25px;
+                color: gold;
+                display: table-cell;
+                vertical-align: middle;
+
+            }
+
+        }
+    }
+}
+
+.portfolio ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0 33.333%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+        flex: 0 0 33.333%;
+
+        .portfolio-image img {
+            position: absolute;
+            max-width: 250px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
