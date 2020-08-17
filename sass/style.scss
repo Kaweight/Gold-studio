@@ -4,6 +4,8 @@ $font-two: 'Open Sans',
 sans-serif;
 $font-three: 'Playfair Display',
 serif;
+$font-four: 'Great Vibes',
+cursive;
 $colour-one: #95a5a6;
 
 * {
@@ -45,6 +47,16 @@ p {
 }
 
 .navigation {
+    .golden {
+        position: absolute;
+        display: flex;
+        color: gold;
+        z-index: 1;
+        padding: 15px 10px;
+        font-size: 30px;
+        font-family: $font-four;
+        letter-spacing: 3px;
+    }
 
     ul {
         position: absolute;
@@ -57,11 +69,6 @@ p {
 
         li {
             padding: 6px 15px;
-
-            &:first-child a {
-                color: yellow;
-                padding-right: 15em;
-            }
 
             a {
                 color: #fff;
@@ -114,7 +121,7 @@ p {
 
 .services {
     margin-top: 15vh;
-    height: 60vh;
+    margin-bottom: 15vh;
 
     .services-box {
         display: flex;
@@ -125,6 +132,8 @@ p {
             max-width: 33.333333%;
             text-align: center;
             margin: 24px 0 0 0;
+            padding: 15px 0;
+            ;
 
             .fas {
                 display: relative;
@@ -147,18 +156,19 @@ p {
     padding-bottom: 4vh;
 
     ul {
-        position: relative;
+        // position: relative;
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
-        height: 100%;
+        // height: 100%;
 
         li {
-            border-left: 20px solid #dfe6e9;
-            border-right: 20px solid #dfe6e9;
+            border-left: 15px solid #dfe6e9;
+            border-right: 15px solid #dfe6e9;
             margin: 20px auto;
             background-color: #f5f6fa;
             height: 350px;
+            padding: 0 auto;
 
             .portfolio-image img {
                 position: relative;
@@ -183,17 +193,19 @@ p {
 
     .container {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
         max-width: 70%;
         margin: 20px auto;
 
+
         p {
             line-height: 35px;
+            // padding-bottom: 20px;
         }
 
         ul {
             display: flex;
-            margin: 0 20%;
 
             li {
                 list-style-type: none;
@@ -212,5 +224,35 @@ p {
         color: #fff;
         line-height: 35px;
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation {
+        .golden {
+            display: none;
+        }
+
+        ul {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    .services-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
