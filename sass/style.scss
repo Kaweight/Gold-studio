@@ -74,7 +74,8 @@ p {
                 color: #fff;
                 text-decoration: none;
                 font-size: 20px;
-                transition: border-bottom 0.1s;
+                transition: border-bottom .1s linear;
+                border-bottom: 0px solid gold;
 
                 &:hover {
                     border-bottom: 2px solid gold;
@@ -155,7 +156,7 @@ p {
                 border-radius: 30px;
                 color: gold;
                 padding: 12px 0;
-                transition: box-shadow 0.5s;
+                transition: box-shadow 1s;
 
                 &:hover {
                     box-shadow: inset 0px 0px 15px 2px rgba(231, 166, 26, 1);
@@ -273,6 +274,7 @@ p {
     }
 
     .navigation {
+
         .golden {
             display: none;
         }
@@ -280,6 +282,7 @@ p {
         ul {
             position: absolute;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             list-style-type: none;
             width: 100%;
