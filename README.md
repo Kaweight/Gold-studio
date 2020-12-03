@@ -4,4 +4,4 @@ This is a simple HTML and CSS landing page.
 
 ### Demo
 
-https://Kaweight.github.io/Golden-studio
+https://Kaweight.github.io/Gold-studio
